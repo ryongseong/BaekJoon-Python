@@ -1,5 +1,6 @@
 import sys
 
+
 stack1 = list(sys.stdin.readline().rstrip())
 #stack1에 문자열을 입력받아 불필요한 공백을 지우고 저장한다.
 stack2 = []
