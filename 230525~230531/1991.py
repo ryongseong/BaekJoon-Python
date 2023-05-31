@@ -30,8 +30,6 @@ def postorder(root):
         print(root, end = '')
 
 
-preorder('A') # 전위 순회를 함. 'A'가 제일 위에 있는 루트 노드이기에 A로 시작한다는 것.
-print()
-inorder('A')
-print()
-postorder('A')
+print(preorder('A')) # 전위 순회를 함. 'A'가 제일 위에 있는 루트 노드이기에 A로 시작한다는 것.
+print(inorder('A'))
+print(postorder('A'))
