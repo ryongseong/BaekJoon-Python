@@ -1,7 +1,7 @@
 # https://www.acmicpc.net/problem/2609
+import math
 
-n, m = int(input().split())
+a, b = map(int, input().split())
 
-min_num = 0
-max_num = 0
-
+print(math.gcd(a, b))
+print(math.lcm(a, b))
