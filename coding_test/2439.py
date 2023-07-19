@@ -1,3 +1,5 @@
+# https://www.acmicpc.net/problem/2439
+
 N = int(input())
 
 for i in range(N):

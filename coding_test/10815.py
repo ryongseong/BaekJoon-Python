@@ -1,3 +1,4 @@
+# https://www.acmicpc.net/problem/10815
 N = int(input())
 card_list = list(map(int, input().split()))
 
