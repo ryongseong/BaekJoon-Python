@@ -1,3 +1,5 @@
+# https://www.acmicpc.net/problem/2798
+
 # 카드 개수 N장과 합인 M을 입력받음.
 N, M = map(int, input().split())
 # 카드 입력
