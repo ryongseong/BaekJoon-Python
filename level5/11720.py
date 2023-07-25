@@ -4,4 +4,8 @@ N = int(input())
 
 M = input()
 
-print(sum(int(M[::])))
+result = []
+for i in M:
+    result.append(int(i))
+
+print(sum(result))
