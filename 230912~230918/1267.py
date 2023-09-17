@@ -1,3 +1,5 @@
+# https://www.acmicpc.net/problem/1267
+
 N = int(input())
 time_list = list(map(int, input().split()))
 youngsik = 0
