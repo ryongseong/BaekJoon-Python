@@ -1,3 +1,5 @@
+# https://www.acmicpc.net/problem/1032
+
 N = int(input())
 
 word1 = list(input())
