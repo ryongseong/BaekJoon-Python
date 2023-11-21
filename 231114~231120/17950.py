@@ -1,4 +1,7 @@
+# https://www.acmicpc.net/problem/17950
+
 import sys
+
 h,x=map(int,sys.stdin.readline().split())
 r=1000000007
 ans=0

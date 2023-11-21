@@ -1,3 +1,5 @@
+# https://www.acmicpc.net/problem/1244
+
 def change(number):
     if switchStatus[number] == 0:
         switchStatus[number] = 1
