@@ -1,14 +1,14 @@
 # https://www.acmicpc.net/problem/1769 
 
-X = input()
+큰자연수 = input()
 
-cnt = 0
-while int(X) >= 10:
-    Y = 0
-    for i in range(len(X)):
-        Y += int(X[i])
-    cnt += 1
-    X = str(Y)
+변환횟수 = 0
+while int(큰자연수) >= 10:
+    변환수 = 0
+    for 자릿수 in range(len(큰자연수)):
+        변환수 += int(큰자연수[자릿수])
+    변환횟수 += 1
+    큰자연수 = str(변환수)
 
-print(cnt)
-print("YES" if int(X)%3 == 0 else "NO")
+print(변환횟수)
+print("YES" if int(큰자연수)%3 == 0 else "NO")
