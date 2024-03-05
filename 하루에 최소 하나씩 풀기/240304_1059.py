@@ -1,9 +1,17 @@
+# https://www.acmicpc.net/problem/1059
+
 import sys
+
 input = sys.stdin.readline
+
 L = int(input())
+
 nums = list(map(int, input().split()))
+
 n = int(input())
+
 nums.sort()
+
 if n in nums:
     print(0)
 else:
