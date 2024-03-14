@@ -1,14 +1,10 @@
 # https://www.acmicpc.net/problem/1183
+# Not Finished yet
 
 N = int(input())
-A_list = []
-B_list = []
+
+time_list = []
 
 for _ in range(N):
-    A, B = map(int, input().split())
-    A_list.append(A)
-    B_list.append(B)
-
-for i in range(N):
-    T = 0
-    waiting = abs(A_list[i] + T - B_list[i])
+    A_i, B_i = map(int, input().split())
+    time_list.append((A_i + B_i) / 2)
