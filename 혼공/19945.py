@@ -1,6 +1,10 @@
 # https://www.acmicpc.net/problem/19945 
 
 n = int(input())
-n = bin(n)
 
-print(len(n[2:]))
+if n > 0:
+    print(len(bin(n))-2)
+elif n < 0:
+    print(32)
+else:
+    print(1)
