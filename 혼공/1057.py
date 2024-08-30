@@ -1,7 +1,12 @@
-# https://www.acmicpc.net/problem/1225
+# https://www.acmicpc.net/problem/1057
 
-A, B = input().split()
+N, K, L = map(int, input().split())
 
-A, B = list(map(int, A)), list(map(int, B))
+rounds = 0
 
-print(sum(A) * sum(B))
+while K != L:
+    K = (K + 1) // 2
+    L = (L + 1) // 2
+    rounds += 1
+
+print(rounds)
