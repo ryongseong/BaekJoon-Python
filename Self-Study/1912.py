@@ -1,5 +1,3 @@
-# https://www.acmicpc.net/problem/1912 
-
 n = int(input())
 
 numbers = list(map(int, input().split()))

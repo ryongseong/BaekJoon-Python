@@ -1,13 +1,13 @@
 # https://www.acmicpc.net/problem/1012
 
-T = int(input()) #테스트케이스의 개수
+T = int(input()) 
 
 dx = [-1,1,0,0]
 dy = [0,0,-1,1]
 
 def BFS(x,y):           
     queue = [(x,y)]
-    matrix[x][y] = 0 # 방문처리
+    matrix[x][y] = 0
 
     while queue:
         x,y = queue.pop(0)
@@ -23,7 +23,6 @@ def BFS(x,y):
                 queue.append((nx,ny))
                 matrix[nx][ny] = 0
 
-# 행렬만들기
 for i in range(T):
     M, N, K = map(int,input().split())
     matrix = [[0]*(N) for _ in range(M)]
