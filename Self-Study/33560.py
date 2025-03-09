@@ -10,8 +10,14 @@ def save_result(current_score):
     return 4
 
 
+def reset_game():
+    global current_score, current_time, get_score, get_time
+    current_score, current_time, get_score, get_time = 0, 0, 1, 4
+
+
 n = int(input())
 dices = list(map(int, input().split()))
+
 current_score, current_time, get_score, get_time = 0, 0, 1, 4
 
 result = [0] * 5
@@ -22,20 +28,19 @@ while True:
         break
     if current_time > 240:
         result[save_result(current_score)] += 1
-        current_score, current_time, get_score, get_time = 0, 0, 1, 4
-        continue
+        reset_game()
     dice = dices[a]
 
     if dice == 1:
         result[save_result(current_score)] += 1
-        current_score, current_time, get_score, get_time = 0, 0, 1, 4
+        reset_game()
+        a += 1
+        continue
     elif dice == 2:
         if get_score > 1:
             get_score /= 2
-        else:
-            get_score += 2
-    elif dice == 3:
-        pass
+        elif get_score == 1:
+            get_time += 2
     elif dice == 4:
         current_time += 56
     elif dice == 5:
