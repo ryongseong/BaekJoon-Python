@@ -1,20 +1,15 @@
 from collections import deque
 
 n, k = map(int, input().split())
+game = deque([i for i in range(1, n + 1)])
 
-game = deque([])
-
-for i in range(0, n):
-    game.append(i+1)
-
-print('<', end='')
+print("<", end="")
 
 while game:
-    for i in range(k-1):
-        game.append(game[0])
-        game.popleft()
-    print(game.popleft(), end='')
+    for i in range(k - 1):
+        game.append(game.popleft())
+    print(game.popleft(), end="")
     if game:
-        print(', ', end='')
+        print(", ", end="")
 
-print('>')
+print(">")
